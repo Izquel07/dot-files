@@ -1,0 +1,20 @@
+[modules]
+left = ["Workspaces", "WindowTitle"]
+center = ["Tempo"]
+right = ["Tray", "Notifications", "KeyboardLayout", "Settings"]
+
+[animations]
+enabled = true
+
+[Notifications]
+format = "%H:%M"
+show_timestamps = true
+show_bodies = true
+
+[tempo]
+clock_format = "%a %d %b %I:%M %p"
+
+[appearance]
+font_name = "JetBrains Monospace"
+background_color =  '#9E9595'
+text_color = '#0E0C0C'

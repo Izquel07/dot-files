@@ -1,12 +1,92 @@
--- ~/.config/hypr/hyprland.lua
+--[=[
 
-require("config.env")
-require("config.monitors")
-require("config.autostart")
-require("config.programs")
-require("config.input")    
-require("config.look-feel")
-require("config.misc")
-require("config.keybinds")
-require("config.permissions")
-require("config.windowsrule")
+  ████          ███████
+ █░░░██        ░██░░░░██  ██   ██
+░█  █░█ ██   ██░██   ░██ ░░██ ██  ██████  ██████
+░█ █ ░█░░██ ██ ░███████   ░░███  ░░██░░█ ██░░░░██
+░██  ░█ ░░███  ░██░░░░     ░██    ░██ ░ ░██   ░██
+░█   ░█  ██░██ ░██         ██     ░██   ░██   ░██
+░ ████  ██ ░░██░██        ██     ░███   ░░██████
+ ░░░░  ░░   ░░ ░░        ░░      ░░░     ░░░░░░
+ ██                               ██                         ██
+░██       ██   ██ ██████         ░██                        ░██
+░██      ░░██ ██ ░██░░░██ ██████ ░██  ██████   ███████      ░██
+░██████   ░░███  ░██  ░██░░██░░█ ░██ ░░░░░░██ ░░██░░░██  ██████
+░██░░░██   ░██   ░██████  ░██ ░  ░██  ███████  ░██  ░██ ██░░░██
+░██  ░██   ██    ░██░░░   ░██    ░██ ██░░░░██  ░██  ░██░██  ░██
+░██  ░██  ██     ░██     ░███    ███░░████████ ███  ░██░░██████
+░░   ░░  ░░      ░░      ░░░    ░░░  ░░░░░░░░ ░░░   ░░  ░░░░░░
+
+]=]
+
+------------
+--- MAIN ---
+------------
+-- Refer to the wiki for more information.
+-- https://wiki.hypr.land/Configuring/Start/
+
+------------------
+---- MONITORS ----
+------------------
+
+require("./config.d/monitors.lua")
+
+---------------------
+---- MY PROGRAMS ----
+---------------------
+
+require("./config.d/programs.lua")
+
+-------------------
+---- AUTOSTART ----
+-------------------
+
+require("./config.d/autostart")
+
+-------------------------------
+---- ENVIRONMENT VARIABLES ----
+-------------------------------
+
+require("./config.d/env.lua")
+
+-----------------------
+----- PERMISSIONS -----
+-----------------------
+
+require("./config.d/permissions.lua")
+
+-----------------------
+---- LOOK AND FEEL ----
+-----------------------
+
+require("./config.d/look-and-feel.lua")
+
+----------------
+----  MISC  ----
+----------------
+
+require("./config.d/misc.lua")
+
+---------------
+---- INPUT ----
+---------------
+
+require("./config.d/input.lua")
+
+---------------------
+---- KEYBINDINGS ----
+---------------------
+
+require("./config.d/keybindings.lua")
+
+--------------------------------
+---- WINDOWS AND WORKSPACES ----
+--------------------------------
+
+require("./config.d/workspaces.lua")
+
+----------------
+--- XWAYLAND ---
+----------------
+
+require("./config.d/xwayland.lua")
